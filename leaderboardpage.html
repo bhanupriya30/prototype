@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap</title>
+<body>
+<style> 
+#container {
+position: fixed;
+width: 800px;
+height: 550px;
+top: 60%;
+left: 50%;
+margin-top: -250px;
+margin-left: -410px;
+background: #FFFFFF;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+html, body {   
+ width: 100%;   
+height: 100%;   
+font-family: "Helvetica Neue", Helvetica, sans-serif;   
+color: #444;   
+-webkit-font-smoothing: antialiased;    background: #f0f0f0;
+}
+
+
+var nameElement = document.forms.myForm.Name;
+  function nameFocus( e ) {
+  var element = e.target || window.event.srcElement;
+  if ( element.value == "Username" )
+    element.value = "";
+}
+if ( nameElement.addEventListener ) {
+  nameElement.addEventListener("focus", nameFocus, false);
+  nameElement.addEventListener("blur", nameBlur, false);
+} else if ( nameElement.attachEvent ) {
+  nameElement.attachEvent("onfocus", nameFocus);
+  nameElement.attachEvent("onblur", nameBlur);
+}
+#top {
+      position: absolute;
+      width:99%;
+      height: 55px;
+	  text-align:right;
+	  background:#;
+      border-radius: 6px;
+      border: 2px solid #;
+      box-shadow: 5px 3px 8px #7A7A52; 
+     }
+	 
+	 
+	 
+	 
+	 label {
+    color:grey;
+    
+    
+    padding-top: 5px;
+    font-size: 14px;
+}
+p a {
+    font-size: 11px;
+    color: #aaa;
+    float: right;
+	text-decoration:none;
+    margin-top: -13px;
+    margin-right: 20px;
+	-webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+}
+p a:hover {
+    color: #555;
+}
+
+input {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px;
+    outline: none;
+}
+
+input[type=text],
+input[type=password] 
+{
+    color: #777;
+    padding-left: 10px;
+    margin: 5px;
+    margin-top: 12px;
+    margin-left: 18px;
+    width: 200px;
+    height: 35px;
+	border: 1px solid #c7d0d2;
+    border-radius: 2px;
+    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;
+	-webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+}
+input[type=text]:hover,
+{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#b6e2ff), to(#6ec2e8));
+    background-image: -moz-linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+    background-image: linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+}
+input[type=submit]:active {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6ec2e8), to(#b6e2ff));
+    background-image: -moz-linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+    background-image: linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+}
+input[type=password]:hover {
+    border: 1px solid #b6bfc0;
+    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .7), 0 0 0 5px #f5f7f8;
+}
+input[type=text]:focus,
+input[type=password]:focus {
+    border: 1px solid #a8c9e4;
+    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #e6f2f9;
+}
+
+.push_button{
+	position:relative;
+        font-size:15px;
+	height:10px;
+     background:#ecf2f5;   
+	color:black;
+        text-decoration:none;
+	display:block;
+	border-radius:15px;
+	border:solid 3px #;
+	
+	text-align:middle;
+	padding:20px 40px;
+	float:left;
+	margin-right:10px;
+     box-shadow: 5px 3px 8px #7A7A52; 
+
+
+}
+.push_button:active{
+    -webkit-box-shadow: 0px 2px 1px #808080;
+    -moz-box-shadow: 0px 2px 0px #808080;
+    box-shadow: 10px 2px 5px #808080;
+    position:relative;
+    top:7px;
+}
+.push_button1{
+	position:relative;
+        font-size:15px;
+	height:10px;
+        
+	background:#ecf2f5;
+        text-decoration:none;
+	display:block;
+	border-radius:15px;
+	border:solid 1px #ffffff;
+	color:Black;
+	text-align:middle;
+	padding:20px 40px;
+	float:left;
+	margin-right:10px;
+     box-shadow: 5px 3px 8px #7A7A52; 
+
+
+}
+.push_button1:active{
+    -webkit-box-shadow: 0px 2px 1px #808080;
+    -moz-box-shadow: 0px 2px 0px #808080;
+    box-shadow: 10px 8px 8px #808080;
+    position:relative;
+    top:7px;
+}
+#oofnt {
+        position:absolute;
+		top:70;
+		}
+#middle {
+        position:absolute;
+		top:180;
+		left:700;
+		}
+#amiddle {
+         position:absolute;
+         top:350;
+         left:500;
+        }
+
+body,html
+{
+          height: 100%;
+          margin: 0;
+          -webkit-font-smoothing: antialiased;
+          font-weight: 100;
+          
+          text-align: center;
+          font-family: helvetica;
+      }
+       
+      .tabs input[type=radio] {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+      }
+      .tabs {
+        width: 650px;
+        float: none;
+        list-style: none;
+        position: relative;
+        padding: 0;
+        margin: 75px auto;
+      }
+      .tabs li{
+        float: left;
+      }
+      .tabs label {
+          display: block;
+          padding: 10px 20px;
+          border-radius: 2px 2px 0 0;
+          color: #08C;
+          font-size: 24px;
+          font-weight: normal;
+          font-family: 'Lily Script One', helveti;
+          background: rgba(255,255,255,0.2);
+          cursor: pointer;
+          position: relative;
+          top: 3px;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+      }
+      .tabs label:hover {
+        background: rgba(255,255,255,0.5);
+        top: 0;
+      }
+       
+      [id^=tab]:checked + label {
+        background: #08C;
+        color: white;
+        top: 0;
+      }
+       
+      [id^=tab]:checked ~ [id^=tab-content] {
+          display: block;
+      }
+      .tab-content{
+        z-index: 2;
+        display: none;
+        text-align: left;
+        width: 100%;
+        font-size: 20px;
+        line-height: 140%;
+        padding-top: 20px;
+        background: #08C;
+        padding: 15px;
+        color: white;
+        position: absolute;
+        top: 53px;
+        left: 0;
+        box-sizing: border-box;
+        -webkit-animation-duration: 0.5s;
+        -o-animation-duration: 0.5s;
+        -moz-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+      }
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+#oofnt { position:absolute;
+top:100px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="top">
+
+<a href="orionorbit.com/login"><img src="img/logo.jpg" style="height:42px;width:40px"></a>
+
+<a href="myclue.html" class="push_button"><font  size="4" face="footlight mt light"><b>My Clues</b></font></a>
+<a href="#" class="push_button"><font  size="4" face="footlight mt light"><b>Invite Friends</b></font></a>
+<a href="#" class="push_button"><font  size="4" face="footlight mt light"><b>Share</b></font></a>
+</div>
+<p id="oofnt">
+<a href="home.html" ><img src="img/logo1.jpg" width="50px" height="50px">
+</a>
+</p>
+<div id="container">
+<br>
+<br>
+ 
+</div>
+
+<br><br>
+<br><br> <br>
+<br>
+<br>
+
+
+
+<div class="container">
+  <ul class="tabs">
+        <li>
+          <input type="radio" checked name="tabs" id="tab1">
+          <label for="tab1">My Geoprints</label>
+          <div id="tab-content1" class="tab-content animated fadeIn">
+    <a href="orionorbit.com/login"><img src="img/logo.jpg" style="height:42px;width:40px"></a>
+      <table style="width:100%">
+  <tr>
+     
+    <th>Username</th>
+    <th>Geofootprints</th>		
+    <th>Points</th>
+  </tr>
+  <tr>
+    
+    <td>Maddy</td>
+    <td>Bangalore</td>		
+    <td>100</td>
+  </tr>
+</table>    
+     </div>
+        </li>
+        <li>
+          <input type="radio" name="tabs" id="tab2">
+          <label for="tab2">Top player</label>
+          <div id="tab-content2" class="tab-content animated fadeIn">
+           <table style="width:100%">
+  <tr>
+    <th>Position</th> 
+    <th>Username</th>
+    <th>Geofootprints</th>		
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>1.</td>
+    <td>Maddy</td>
+    <td>Bangalore</td>		
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>2.</td>	
+    <td>Eve</td>
+    <td>Hongkong</td>		
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>John</td>
+    <td>Malaysia</td>		
+    <td>80</td>
+  </tr>
+<tr>
+    <td>4.</td>
+    <td>Tom</td>
+    <td>Singapore</td>		
+    <td>80</td>
+  </tr>
+<tr>
+    <td>5.</td>
+    <td>Harry</td>
+    <td>Adelaide</td>		
+    <td>80</td>
+  </tr>
+<tr>
+    <td>6.</td>
+    <td>james</td>
+    <td>Melbourne</td>		
+    <td>80</td>
+  </tr>
+<tr>
+    <td>7.</td>
+    <td>Johny</td>
+    <td>Sydney</td>		
+    <td>80</td>
+  </tr>
+</table>
+
+
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="tabs" id="tab3">
+          <label for="tab3">In city</label>
+          <div id="tab-content3" class="tab-content animated fadeIn">
+            <table style="width:100%">
+  <tr>
+    <th>Position</th> 
+    <th>Username</th>
+    <th>Geofootprints</th>		
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>1.</td>
+    <td>Maddy</td>
+    <td>Bangalore</td>		
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>2.</td>	
+    <td>Eve</td>
+    <td>Bangalore</td>		
+    <td>75</td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>John</td>
+    <td>Bangalore</td>		
+    <td>65</td>
+  </tr>
+<tr>
+    <td>4.</td>
+    <td>Tom</td>
+    <td>Bangalore</td>		
+    <td>60</td>
+  </tr>
+<tr>
+    <td>5.</td>
+    <td>Harry</td>
+    <td>Bangalore</td>		
+    <td>53</td>
+  </tr>
+<tr>
+    <td>6.</td>
+    <td>james</td>
+    <td>Bangalore</td>		
+    <td>43</td>
+  </tr>
+<tr>
+    <td>7.</td>
+    <td>Swan</td>
+    <td>Bangalore</td>		
+    <td>-5</td>
+  </tr>
+</table>
+
+
+          </div>
+        </li>
+       <li>
+          <input type="radio" name="tabs" id="tab4">
+          <label for="tab4">Among friends</label>
+          <div id="tab-content4" class="tab-content animated fadeIn">
+     <a href="orionorbit.com/login"><img src="img/fbconnect.png" style="height:50px;width:200px"></a>
+                      
+</div>
+        </li>
+</ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,432 @@
+<html>
+<head>
+<title>CHOOSE CLUE</title>
+<style tyle=text/css>
+   
+#container {
+position: fixed;
+width: 340px;
+height: 280px;
+top: 40%;
+left: 50%;
+margin-top: -140px;
+margin-left: -170px;
+background: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+form {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+label {
+    color: #555;
+    display: inline-block;
+    margin-left: 18px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+p a {
+    font-size: 11px;
+    color: #aaa;
+    float: right;
+    margin-top: -13px;
+    margin-right: 20px;
+	-webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+}
+p a:hover {
+    color: #555;
+}
+
+input {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px;
+    outline: none;
+}
+
+input[type=text],
+input[type=password] 
+{
+    color: #777;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 12px;
+    margin-left: 18px;
+    width: 290px;
+    height: 35px;
+	border: 1px solid #c7d0d2;
+    border-radius: 2px;
+    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;
+	-webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+}
+input[type=text]:hover,
+{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#b6e2ff), to(#6ec2e8));
+    background-image: -moz-linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+    background-image: linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+}
+input[type=submit]:active {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6ec2e8), to(#b6e2ff));
+    background-image: -moz-linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+    background-image: linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+}
+input[type=password]:hover {
+    border: 1px solid #b6bfc0;
+    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .7), 0 0 0 5px #f5f7f8;
+}
+input[type=text]:focus,
+input[type=password]:focus {
+    border: 1px solid #a8c9e4;
+    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #e6f2f9;
+}
+
+#lower 
+{
+    background: #ecf2f5;
+    width: 100%;
+    height: 69px;
+    margin-top: 100px;
+}
+
+input[type=checkbox] 
+{
+    margin-left: 20px;
+    margin-top: 20px;
+	height:1.5em;
+    width:1.5em;
+}
+
+.check 
+{
+    margin-left: 3px;
+}
+
+input[type=submit] 
+{
+    margin-left: 50px;
+    
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+	font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #acd6ef; /*IE fallback*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#acd6ef), to(#6ec2e8));
+    background-image: -moz-linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+    background-image: linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+    border-radius: 30px;
+    border: 1px solid #66add6;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
+    cursor: pointer;
+}
+#top {
+      position: absolute;
+      width:99%;
+      height: 55px;
+	  text-align:right;
+	  background:#;
+      border-radius: 6px;
+      border: 2px solid #;
+      box-shadow: 5px 3px 8px #7A7A52; 
+     }
+#left {
+     border:5px;
+     float:right;
+}
+
+
+}
+#amiddle  {
+            position:absolute;
+             top:300px;
+            left:350px;
+}
+
+#bmiddle {
+             align:middle;
+}
+
+
+.button
+{
+    color: #000000;
+    background-color: #000000;
+    
+}
+.simple
+{
+    color: #000000;
+    background-color: #FF0000;
+    
+}
+
+.push_button{
+	position:relative;
+        font-size:15px;
+	height:10px;
+     background:#ecf2f5;   
+	color:black;
+        text-decoration:none;
+	display:block;
+	border-radius:15px;
+	border:solid 3px #;
+	
+	text-align:middle;
+	padding:20px 40px;
+	float:left;
+	margin-right:10px;
+     box-shadow: 5px 3px 8px #7A7A52; 
+
+
+}
+.push_button:active{
+    -webkit-box-shadow: 0px 2px 1px #808080;
+    -moz-box-shadow: 0px 2px 0px #808080;
+    box-shadow: 10px 2px 5px #808080;
+    position:relative;
+    top:7px;
+}
+
+ 
+}
+ .l1 {
+      position:absolute;
+      top:250;
+      left:550;
+}
+      
+#radio
+  {
+     position:absolute;
+     top:450;
+     left:1060;
+  }
+#txt1
+   {
+     position:absolute;
+     top:320;
+     left:300;
+   }
+ 
+#text
+    {
+     position:absolute;
+     top:320;
+     left:700;
+   }
+#answer
+    {
+    position:absolute;
+    top:400;
+    left:300;
+  }
+
+#map
+  {
+   position:absolute;
+   top:480;
+   left:700;
+  }
+#mappc
+ {
+  position:absolute;
+  top:480;
+  left:800;
+}
+#side
+ {
+   position:absolute;
+     top:160;
+      right:5;
+}
+#cancel
+ {
+  position:absolute;
+  top:600;
+  left:670;
+}
+#oofnt {
+        position:absolute;
+		top:70;
+		}
+		
+#badge {
+        position: absolute;
+        width:80px;
+        height:80px;
+        
+        border-radius: 6px;
+        border: 2px solid #;
+       text-align:center;
+        top:100;
+		left:750;
+		}
+#Bbadge {
+        position: absolute;
+        width:80px;
+        height:80px;
+        border-radius: 6px;
+        border: 2px solid #;
+       text-align:center;
+        top:100;
+		left:850;
+		}		
+.push_button1{
+	position:relative;
+        font-size:15px;
+	height:2px;
+        
+	background:#ecf2f5;
+        text-decoration:none;
+	display:block;
+	border-radius:15px;
+	border:solid 1px #ffffff;
+	color:Black;
+	text-align:middle;
+	padding:20px 40px;
+	float:left;
+	margin-right:10px;
+     box-shadow: 5px 3px 8px #7A7A52; 
+
+
+}
+.push_button1:active{
+    -webkit-box-shadow: 0px 2px 1px #808080;
+    -moz-box-shadow: 0px 2px 0px #808080;
+    box-shadow: 10px 8px 8px #808080;
+    position:relative;
+    top:7px;
+}		
+
+#img5 {
+position :absolute;
+top:380px;
+left:450px;
+
+}
+#img6 {
+position :absolute;
+top:380px;
+left:750px;
+
+}
+</style>
+
+<link href="css/modal.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+
+
+
+
+
+<br/>
+
+
+<div id="top">
+
+<a href="orionorbit.com/login"><img src="img/logo.jpg" style="height:42px;width:40px"></a>
+
+<a href="myclue.html" class="push_button"><font  size="4" face="footlight mt light"><b>My Clues</b></font></a>
+<a href="#" class="push_button"><font  size="4" face="footlight mt light"><b>Invite Friends</b></font></a>
+<a href="#" class="push_button"><font  size="4" face="footlight mt light"><b>Share</b></font></a>
+</div>
+
+<br/>
+<div id="badge">
+<img src="img/paward.jpg" width="40px" height="40px">
+AWARDS
+</div>
+<div id="Bbadge">
+<img src="img/baward.png" width="40px" height="40px">
+ACHIEVEMENTS
+</div>
+
+
+
+
+
+
+
+<div id="txt1">
+<p>Choose the better clue for <span style="color:Red"> <b>Taj Mahal</span> </b> ?</p>
+
+
+
+<b><font size="4">Clue</font></b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" value="A teardrop on the cheek of time"readonly font size="20"style="border:2px solid #404040;border-radius:5px;width:240px;height:30px">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text"value="A saline teardrop from my eye"readonly style="border:2px solid #404040;border-radius:5px;width:240px;height:30px">
+<br>
+<br>
+
+
+<b><font size="4">Description of Clue</font></b>
+&nbsp;&nbsp;
+<input type="text"style="border:2px solid #404040;border-radius:5px;width:250px;height:100px">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" style="border:2px solid #404040;border-radius:5px;width:250px;height:100px">
+<br>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" style="border-radius:10px;width:100px;height:30px;background-color:grey"><b>Clue 1</b></button> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" style="border-radius:10px;width:100px;height:30px;background-color:grey"><b>Clue 2</b></button> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+</div>
+<div id="radio">
+
+<a href="#done_popup" id="done_pop">
+<button type="button" style="border-radius:10px;width:220px;height:100px;background-color:grey"><b>"Both are equally good ?"</b></button> </a>
+<a href="#x" class="overlay" id="done_popup"></a>
+        <div class="popup">
+           <div id="container">       
+		
+		<a href="home.html"><img src="img/x.jpg" style="float:right;width:20px;height:20px"></a>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4" >" Response Noted"</font>
+		<br>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="compareclue.html"<font size="4">"Compare difficulty of clues and get <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6 points"</font>
+<br>
+
+		
+	</div>
+        </div>
+</div>
+
+
+<div id="img5">
+<img src="img/Line.png" width="30" height="240">
+</div>
+
+<div id="img6">
+<img src="img/Line.png" width="30" height="240">
+</div>
+
+</body>
+
+</html>
+
+
+
+

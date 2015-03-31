@@ -1,0 +1,394 @@
+<html>
+<head>
+<title>LOGIN</title>
+<style>
+
+#top {
+      position: absolute;
+      width:99%;
+      height: 55px;
+	  text-align:right;
+	  background:#;
+      border-radius: 6px;
+      border: 2px solid #;
+      box-shadow: 5px 3px 8px #7A7A52; 
+     }
+	 
+	 
+	 
+	 
+	 label {
+    color:grey;
+    
+    
+    padding-top: 5px;
+    font-size: 14px;
+}
+p a {
+    font-size: 11px;
+    color: #aaa;
+    float: right;
+	text-decoration:none;
+    margin-top: -13px;
+    margin-right: 20px;
+	-webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+}
+p a:hover {
+    color: #555;
+}
+
+input {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px;
+    outline: none;
+}
+
+input[type=text],
+input[type=password] 
+{
+    color: #777;
+    padding-left: 10px;
+    margin: 5px;
+    margin-top: 12px;
+    margin-left: 18px;
+    width: 200px;
+    height: 35px;
+	border: 1px solid #c7d0d2;
+    border-radius: 2px;
+    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;
+	-webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+}
+input[type=text]:hover,
+{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#b6e2ff), to(#6ec2e8));
+    background-image: -moz-linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+    background-image: linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+}
+input[type=submit]:active {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6ec2e8), to(#b6e2ff));
+    background-image: -moz-linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+    background-image: linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+}
+input[type=password]:hover {
+    border: 1px solid #b6bfc0;
+    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .7), 0 0 0 5px #f5f7f8;
+}
+input[type=text]:focus,
+input[type=password]:focus {
+    border: 1px solid #a8c9e4;
+    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #e6f2f9;
+}
+
+#lower 
+{
+    background: #ecf2f5;
+	top:70%
+    width: 50%;
+    height: 70px;
+    margin-top: 10px;
+}
+
+input[type=checkbox] 
+{
+    margin-left: 20px;
+    margin-top: 20px;
+	height:1.5em;
+    width:1.5em;
+}
+
+.check 
+{
+    margin-left: 3px;
+}
+
+input[type=submit] 
+{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+	font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #acd6ef; /*IE fallback*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#acd6ef), to(#6ec2e8));
+    background-image: -moz-linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+    background-image: linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+    border-radius: 30px;
+    border: 1px solid #66add6;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
+    cursor: pointer;
+}
+
+
+
+
+#badge {
+        position: absolute;
+        width:100px;
+        height:100px;
+        
+        border-radius: 6px;
+        border: 2px solid #;
+       text-align:center;
+        top:100;
+		left:750;
+		}
+#Bbadge {
+        position: absolute;
+        width:100px;
+        height:100px;
+        border-radius: 6px;
+        border: 2px solid #;
+       text-align:center;
+        top:100;
+		left:850;
+		}		
+.push_button{
+	position:relative;
+        font-size:15px;
+	height:10px;
+     background:#ecf2f5;   
+	color:black;
+        text-decoration:none;
+	display:block;
+	border-radius:15px;
+	border:solid 3px #;
+	
+	text-align:middle;
+	padding:20px 40px;
+	float:left;
+	margin-right:10px;
+     box-shadow: 5px 3px 8px #7A7A52; 
+
+
+}
+.push_button:active{
+    -webkit-box-shadow: 0px 2px 1px #808080;
+    -moz-box-shadow: 0px 2px 0px #808080;
+    box-shadow: 10px 2px 5px #808080;
+    position:relative;
+    top:7px;
+}
+.push_button1{
+	position:relative;
+        font-size:15px;
+	height:10px;
+        
+	background:#ecf2f5;
+        text-decoration:none;
+	display:block;
+	border-radius:15px;
+	border:solid 1px #ffffff;
+	color:Black;
+	text-align:middle;
+	padding:20px 40px;
+	float:left;
+	margin-right:10px;
+     box-shadow: 5px 3px 8px #7A7A52; 
+
+
+}
+.push_button1:active{
+    -webkit-box-shadow: 0px 2px 1px #808080;
+    -moz-box-shadow: 0px 2px 0px #808080;
+    box-shadow: 10px 8px 8px #808080;
+    position:relative;
+    top:7px;
+}
+#oofnt {
+        position:absolute;
+		top:70;
+		}
+#middle {
+        position:absolute;
+		top:250;
+		left:540;
+		}
+#amiddle {
+         position:absolute;
+         top:350;
+         left:500;
+        }
+
+#container1 {
+position: absolute;
+width: 200px;
+height: 250px;
+
+top: 370px;
+left: 400px;
+margin-top: -140px;
+margin-left: -170px;
+
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 3px 8px #7A7A52; 
+
+}
+#container2 {
+position: absolute;
+width: 200px;
+height: 250px;
+
+top: 370px;
+left: 660px;
+margin-top: -140px;
+margin-left: -170px;
+
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 3px 8px #7A7A52; 
+}
+#container3 {
+position: absolute;
+width: 200px;
+height: 250px;
+
+top: 670;
+left: 400;
+margin-top: -140px;
+margin-left: -170px;
+
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 3px 8px #7A7A52; 
+}
+#container4 {
+position: absolute;
+width: 200px;
+height: 250px;
+
+top: 670px;
+left: 630px;
+margin-top: -140px;
+margin-left: -170px;
+
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 3px 8px #7A7A52; 
+
+}
+#container5 {
+position: absolute;
+width: 200px;
+height: 250px;
+
+top: 670px;
+left: 860px;
+margin-top: -140px;
+margin-left: -170px;
+
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 3px 8px #7A7A52; 
+
+}
+		</style>
+
+</head>
+<body>
+
+<div id="top">
+
+<a href="orionorbit.com/login"><img src="img/logo.jpg" style="height:42px;width:40px"></a>
+
+<a href="myclue.html" class="push_button"><font  size="4" face="footlight mt light"><b>My Clues</b></font></a>
+<a href="#" class="push_button"><font  size="4" face="footlight mt light"><b>Invite Friends</b></font></a>
+<a href="#" class="push_button"><font  size="4" face="footlight mt light"><b>Share</b></font></a>
+</div>
+<p id="oofnt">
+<a href="home.html" ><img src="img/logo1.jpg" width="70px" height="70px"></a>
+</p>
+
+
+<div id="badge">
+<img src="img/paward.jpg" width="60px" height="60px">
+AWARDS
+</div>
+<div id="Bbadge">
+<img src="img/baward.png" width="60px" height="60px">
+ACHIEVEMENTS
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+&nbsp; <b>Filters</b>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+<br>
+
+
+  <label for="Location">Country
+  &nbsp;<select style="border-radius:10px;width:100px;height:30px">
+  
+  <option value="saab">India</option>
+  <option value="opel">Australia</option>
+  <option value="audi">Newzealand</option>
+</select>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+<br>
+<label for="recent"> City &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;<select style="border-radius:10px;width:100px;height:30px">
+  
+  <option>New Delhi</option>
+  <option>Sydney</option>
+  <option>Auckland</option>
+</select>&nbsp;&nbsp;&nbsp;
+
+
+<div id="container1">
+<a href="home.html"><img src="img/x.jpg" style="float:right;width:20px;height:20px"></a>
+	
+
+
+<input type="text" id="Clue2" placeholder="Clue2" name="textfield" style="border:2px solid grey;border-radius:5px; width:150px; height:40px">
+<br>
+
+<input type="text" id="Answer" placeholder="Answer" name="textfield" style="border:2px solid grey;border-radius:5px;width:150px; height:40px">
+<br>
+
+<input type="text" id="Level" placeholder="Level"  name="textfield" style="border:2px solid grey;border-radius:5px;width:150px; height:40px">&nbsp;&nbsp;&nbsp;
+
+<br>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="validate.html"><button type="button"  name="text" style="border:2px solid grey;border-radius:2px;width:150px; height:40px">Validate to get 6 points</button><br></a>
+</div>
+<div id="container2">
+<img src="img/x.jpg" style="float:right;width:20px;height:20px">
+	
+
+
+<input type="text" id="Clue3" placeholder="Clue3" name="textfield" style="border:2px solid grey;border-radius:5px; width:150px; height:40px">
+<br>
+
+<input type="text" id="Answer" placeholder="Answer" name="textfield" style="border:2px solid grey;border-radius:5px;width:150px; height:40px">
+<br>
+
+<input type="text" id="Level" placeholder="Level"  name="textfield" style="border:2px solid grey;border-radius:5px;width:150px; height:40px">&nbsp;&nbsp;&nbsp;
+<br>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="validate.html"><button type="button"  name="text" style="border:2px solid grey;border-radius:2px;width:150px; height:40px">Validate to get 6 points</button></a><br></div>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
